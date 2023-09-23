@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "start": "cross-env PORT=3005 vue-cli-service serve",
+    "serve": "cross-env PORT=3005 vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "cross-env": "^7.0.3",
     "css-loader": "^6.8.1",
     "normalize.css": "^8.0.1",
     "style-loader": "^3.3.3",
