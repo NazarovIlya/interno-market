@@ -6,12 +6,18 @@
 </template>
 
 <script lang="ts">
+import store from '@/store';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'NavigationBar',
   props: {
     type: String,
+  },
+  data() {
+    return {
+      links: store.getters.LINKS,
+    };
   },
   computed: {
     styles() {
@@ -23,28 +29,6 @@ export default defineComponent({
       }
       return 'style-class-none';
     },
-  },
-  data() {
-    return {
-      links: [
-        {
-          title: 'Home',
-          path: '/',
-        },
-        {
-          title: 'Project',
-          path: '/project',
-        },
-        {
-          title: 'Blog',
-          path: '/blog',
-        },
-        {
-          title: 'About Vue 3',
-          path: '/about',
-        },
-      ],
-    };
   },
 });
 </script>

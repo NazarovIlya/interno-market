@@ -1,4 +1,5 @@
 <template>
+  <logo-comp/>
   <navigation-bar type="header"/>
   <nav>
     <router-link to="/">Home</router-link> |
@@ -8,11 +9,13 @@
 </template>
 
 <script>
+import LogoComp from './components/base/LogoComp.vue';
 import NavigationBar from './components/base/NavigationBar.vue';
 
 export default ({
   name: 'App',
   components: {
+    LogoComp,
     NavigationBar,
   },
 });
