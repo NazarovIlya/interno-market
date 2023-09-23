@@ -1,22 +1,22 @@
 <template>
-  <logo-comp/>
-  <navigation-bar type="header"/>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div class="container">
+  <header-comp/>
+  <main class="content">
+    <router-view/>
+  </main>
+  <footer-comp/>
+  </div>
 </template>
 
 <script>
-import LogoComp from './components/base/LogoComp.vue';
-import NavigationBar from './components/base/NavigationBar.vue';
+import HeaderComp from './components/base/HeaderComp.vue';
+import FooterComp from './components/base/FooterComp.vue';
 
 export default ({
   name: 'App',
   components: {
-    LogoComp,
-    NavigationBar,
+    HeaderComp,
+    FooterComp,
   },
 });
 </script>

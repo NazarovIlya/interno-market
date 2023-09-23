@@ -9,8 +9,9 @@
 </template>
 
 <script>
+import { defineComponent } from 'vue';
 
-export default ({
+export default defineComponent({
   name: 'LogoComp',
 });
 </script>
