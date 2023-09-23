@@ -16,7 +16,7 @@ export default defineComponent({
   },
   data() {
     return {
-      links: store.getters.LINKS,
+      links: store.getters.getLINKS,
     };
   },
   computed: {

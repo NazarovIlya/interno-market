@@ -23,7 +23,7 @@ export default createStore({
       ],
   },
   getters: {
-    LINKS: (state) => state.links,
+    getLINKS: (state) => state.links,
   },
   mutations: {
   },

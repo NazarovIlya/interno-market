@@ -1,9 +1,9 @@
 <template>
   <div class="container">
   <header-comp/>
-  <main class="content">
-    <router-view/>
-  </main>
+    <main class="content">
+      <router-view/>
+    </main>
   <footer-comp/>
   </div>
 </template>
